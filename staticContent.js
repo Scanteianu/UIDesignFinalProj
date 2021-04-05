@@ -46,6 +46,15 @@ var contentLibrary=
         It is a 32 Bar form, of AABA structure, with each A being 8 bars, and the B (bridge being 8 bars). It's usually played in B flat major, and utilizes ii V7s extensively.
         `,
     },
+    "learnMusic": {
+        "type": "media",
+        "video": `
+            <img class="sheetmusic" src="https://i.pinimg.com/originals/61/39/85/6139855caf1ef2a5c756587f356ae30d.jpg" alt="rhythm changes lead sheet">
+        `,
+        "title": "Rhythm Changes Sheet Music",
+        "description": `<br>Feel free to print this sheet music and use it when learning Rhythm Changes.
+        `,
+    },
     "practiceChords": {
         "type": "media",
         "video": `
