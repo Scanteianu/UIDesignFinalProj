@@ -73,6 +73,47 @@ var contentLibrary=
         "description": `<br>Here's another backing track, this one doesn't have chords on screen, because you will likely not have chords on the screen at your next jam session or gig. Try to solo along to this one and keep track of where you are in the form!
         `,
     },
+    "quizHistory": {
+        "type": "quiz",
+        "questions": [
+            {
+                "text": "What is rhythm changes named after?",
+                "choices": ["Rockin' in Rhythm", "I Got Rhythm", "Rhythm and Blues", "Drum N' Bass"],
+                "correct": 1,
+            },
+            {
+                "text": "Who wrote I Got Rhythm?",
+                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
+                "correct": 2,
+            }
+        ]
+    },
+    
+    "quizTheory": {
+        "type": "quiz",
+        "questions": [
+            {
+                "text": "How long is Rhythm Changes?",
+                "choices": ["Rockin' in Rhythm", "I Got Rhythm", "Rhythm and Blues", "Drum N' Bass"],
+                "correct": 1,
+            },
+            {
+                "text": "What time signature is Rhythm Changes in?",
+                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
+                "correct": 2,
+            },
+            {
+                "text": "What key is Rhythm Changes in?",
+                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
+                "correct": 2,
+            },
+            {
+                "text": "What is the form of Rhythm Changes?",
+                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
+                "correct": 2,
+            },
+        ]
+    },
     
     
 }

@@ -1,5 +1,12 @@
 
 var currentSection="welcome"
+var currentState={
+    "currentSection": "welcome",
+    "quizProgress": {
+        
+    }
+    
+}
 
 
 $( document ).ready(function() {
@@ -14,7 +21,7 @@ function setupHover(){
     });   
 }
 function selectSection(sectionId){
-    currentSection=sectionId
+    currentState["currentSection"]=sectionId
     loadPage()
     
 }
@@ -69,7 +76,13 @@ function loadPage(){
     
     document.getElementById("sections").innerHTML=generateNav(navSegments,currentSection)
     setupHover()
-    currentContent=contentLibrary[currentSection]
-    document.getElementById("content").innerHTML=generateVideoContent(currentContent)
+    currentContent=contentLibrary[currentState["currentSection"]]
+    if(currentContent["type"]=="media"){
+        document.getElementById("content").innerHTML=generateVideoContent(currentContent)
+    }
+    if(currentContent["type"]=="quiz"){
+        document.getElementById("content").innerHTML=generateQuizContent(currentContent,currentState)
+    }
+    
     
 }
