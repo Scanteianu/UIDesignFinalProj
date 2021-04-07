@@ -76,7 +76,7 @@ function qSummary(){
     document.getElementById("content").innerHTML=`
     You got ${right} / ${total} right!
     Feel free to reset the quiz and try again, or  go to another section.
-    <br><button class="btn btn-link" onclick="initializeQuiz(currentState)">Reset Quiz</button>
+    <br><button class="btn btn-link" onclick="resetQuiz()">Reset Quiz</button>
     `
 }
 function initializeQuiz(currentState){
@@ -85,4 +85,8 @@ function initializeQuiz(currentState){
         "numRight": 0,
         "state": "question"
     }
+}
+function resetQuiz(){
+    initializeQuiz(currentState)
+    document.getElementById("content").innerHTML=generateQuizContent(currentContent,currentState)
 }

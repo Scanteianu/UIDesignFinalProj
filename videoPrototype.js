@@ -73,10 +73,11 @@ function generateVideoContent(currentContent){
 }
 
 function loadPage(){
-    
-    document.getElementById("sections").innerHTML=generateNav(navSegments,currentSection)
-    setupHover()
     currentContent=contentLibrary[currentState["currentSection"]]
+    
+    document.getElementById("sections").innerHTML=generateNav(navSegments,currentState["currentSection"])
+    setupHover()
+    
     if(currentContent["type"]=="media"){
         document.getElementById("content").innerHTML=generateVideoContent(currentContent)
     }

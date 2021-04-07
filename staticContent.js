@@ -85,6 +85,11 @@ var contentLibrary=
                 "text": "Who wrote I Got Rhythm?",
                 "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
                 "correct": 2,
+            },
+            {
+                "text": "Which of these doesn't use rhythm changes?",
+                "choices": ["Ornithology", "Anthropology", "I've Got Rhythm", "Green Dolphin Street"],
+                "correct": 3,
             }
         ]
     },
@@ -94,23 +99,23 @@ var contentLibrary=
         "questions": [
             {
                 "text": "How long is Rhythm Changes?",
-                "choices": ["Rockin' in Rhythm", "I Got Rhythm", "Rhythm and Blues", "Drum N' Bass"],
-                "correct": 1,
+                "choices": ["12 bars", "16 bars", "32 bars", "34 bars"],
+                "correct": 2,
             },
             {
                 "text": "What time signature is Rhythm Changes in?",
-                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
-                "correct": 2,
+                "choices": ["3/4", "12/8", "6/8", "4/4"],
+                "correct": 3,
             },
             {
                 "text": "What key is Rhythm Changes in?",
-                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
-                "correct": 2,
+                "choices": ["Bb Major", "Bb Minor", "C Major", "F Minor"],
+                "correct": 0,
             },
             {
                 "text": "What is the form of Rhythm Changes?",
-                "choices": ["George Harrison", "John Coltrane", "George Gershwin", "John Williams"],
-                "correct": 2,
+                "choices": ["AAB", "Blues", "Through Composed", "AABA"],
+                "correct": 3,
             },
         ]
     },
