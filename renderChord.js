@@ -1,6 +1,7 @@
 var currentChord=["bb","d","f","ab"]
 var notesLeft=4
 var notesPressed=[]
+var chordsLeft=[]
 function keyDown(keyName){
     var colorToSet="wrongKey"
     if(currentChord.includes(keyName)){
@@ -31,13 +32,23 @@ function setKeyColor(keyName,keyColor){
 }
 
 function initializeChord(){
-    chordName="Bb7"
-    currentChord=["bb","d","f","ab"]
+    if(chordsLeft.length==0){
+        chordsLeft=Object.keys(chordLibrary)
+        console.log(chordsLeft)
+    }
+    let index=Math.floor(Math.random()*chordsLeft.length)
+    let chosenName=chordsLeft[index]
+    chordsLeft.splice(index,1)
+    chordName=chosenName
+    currentChord=chordLibrary[chosenName]
+    notesLeft=currentChord.length
+    notesPressed=[]
     setUpChordOnScreen(chordName,currentChord)
 }
 
 
 function setUpChordOnScreen(chordName, currentChord){
+    
     notesLeft=currentChord.length
     document.getElementById("content").innerHTML=`
         <div id="chordName"><h1>Chord: ${chordName}</h1></div>
@@ -68,7 +79,7 @@ function setUpChordOnScreen(chordName, currentChord){
                     <div id="b" class="keyNatural frame" onclick="keyDown(&quot;b&quot;)"></div>
                 </div>
             </div>
-            <div id="description">Click the notes that make up the chord displayed above on the piano!</div>
+            <div id="description">Click the notes that make up the chord displayed above on the piano! <br>This section is random, so you might get the current chord multiple times. When you are comfortable with your knowledge of the chord notes, you can move on!</div>
             <div id="chordStatus">${notesLeft}/${notesLeft} notes left in chord.</div>
     `
 }

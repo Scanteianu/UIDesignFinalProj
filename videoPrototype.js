@@ -77,7 +77,9 @@ function loadPage(){
     
     document.getElementById("sections").innerHTML=generateNav(navSegments,currentState["currentSection"])
     setupHover()
-    
+    if(currentContent["type"]=="chord"){
+        initializeChord()
+    }
     if(currentContent["type"]=="media"){
         document.getElementById("content").innerHTML=generateVideoContent(currentContent)
     }

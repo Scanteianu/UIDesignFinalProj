@@ -118,7 +118,17 @@ var contentLibrary=
                 "correct": 3,
             },
         ]
-    },
-    
+    }, 
+    "quizNotes": {
+        "type": "chord"
+    }, 
+}
+
+var chordLibrary={
+    "Bb7": ["bb","d","f","ab"],
+    "Cm": ["c","eb","g"],
+    "Gm6": ["g","bb","d","e"],
+    "F7": ["f","a","c","eb"],
+    "Dm7": ["d","f","a","c"],
     
 }
