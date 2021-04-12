@@ -122,6 +122,9 @@ var contentLibrary=
     "quizNotes": {
         "type": "chord"
     }, 
+    "quizChanges": {
+        "type": "changes"
+    }, 
 }
 
 var chordLibrary={

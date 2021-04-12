@@ -68,8 +68,8 @@
             margin: auto;
         }
         .sheetmusic{
-            width: auto;
-            height: 75vh;
+            width: 25vw;
+            height: auto;
         }
         .alignRight{
             text-align: right;
@@ -98,7 +98,7 @@
         
     </style>
   </head>
-  <body onload="loadPage()">
+  <body onload="initializeChanges()">
   
 
     
@@ -115,7 +115,7 @@
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="sections">
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="content">
-                
+            
         </div>
         </div>
     </div>
@@ -138,10 +138,8 @@
         href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <script src="{{ url_for('static', filename='infinity.js') }}"></script> -->
     <script src="staticContent.js"></script>
-    <script src="renderChord.js"></script>
-    <script src="renderChanges.js"></script>
     <script src="renderQuiz.js"></script>
-    <script src="rhythmChangesDriver.js"></script>
+    <script src="renderChanges.js"></script>
   
   </body>
   
