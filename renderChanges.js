@@ -1,42 +1,9 @@
-var changes=[
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb|Bb7",
-    "Eb|Eb7",
-    "Bb7|F7",
-    "Bb",
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb|Bb7",
-    "Eb|Eb7",
-    "Bb7|F7",
-    "Bb",
-    "D-7",
-    "D-7",
-    "G-7",
-    "G-7",
-    "C-7",
-    "C-7",
-    "F7",
-    "F7",
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb7|G-7",
-    "C-7|F7",
-    "Bb|Bb7",
-    "Eb|Eb7",
-    "Bb7|F7",
-    "Bb",
-]
+
 var assignedMeasures=[]
 
 function initializeChanges(){
     assignedMeasures=[]
-    document.getElementById("content").innerHTML=setUpGrid()
+    document.getElementById("content").innerHTML=setUpGridFromChanges()
     setupChordChoices()
     setupJq()
     
@@ -74,7 +41,7 @@ function setupJq(){
         event.target.innerHTML=attemptedChord
         ui.draggable[0].remove()
         assignedMeasures.push(destMNum)
-        if(assignedMeasures.length==32){
+        if(assignedMeasures.length==changes.length){
             notifySuccess()
         }
         return 
@@ -95,8 +62,16 @@ function setupJq(){
       "classes":{"ui-droppable-hover": "darken"}
     });
 }
-
-function setUpGrid(){
+function setUpGridFromChanges(){
+    let cols=["","","",""]
+    
+    for(let i in changes){
+        let iPlusOne=parseInt(i)+1
+        cols[i%4]+=`
+            <div class="row frame cDest" id="measure${iPlusOne}">?</div>
+        `
+    }
+    
     return `
         <div class="row">
             Drag the chords from the chord bank to the right measure in the 32 bar grid!
@@ -112,44 +87,16 @@ function setUpGrid(){
                         
                     <div class="row">
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="chordCol1">
-                            <div class="row frame cDest" id="measure1">?</div>
-                            <div class="row frame cDest" id="measure5">?</div>
-                            <div class="row frame cDest" id="measure9">?</div>
-                            <div class="row frame cDest" id="measure13">?</div>
-                            <div class="row frame cDest" id="measure17">?</div>
-                            <div class="row frame cDest" id="measure21">?</div>
-                            <div class="row frame cDest" id="measure25">?</div>
-                            <div class="row frame cDest" id="measure29">?</div>
+                            ${cols[0]}
                         </div>
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="chordCol2">
-                            <div class="row frame cDest" id="measure2">?</div>
-                            <div class="row frame cDest" id="measure6">?</div>
-                            <div class="row frame cDest" id="measure10">?</div>
-                            <div class="row frame cDest" id="measure14">?</div>
-                            <div class="row frame cDest" id="measure18">?</div>
-                            <div class="row frame cDest" id="measure22">?</div>
-                            <div class="row frame cDest" id="measure26">?</div>
-                            <div class="row frame cDest" id="measure30">?</div>
+                            ${cols[1]}
                         </div>
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="chordCol3">
-                            <div class="row frame cDest" id="measure3">?</div>
-                            <div class="row frame cDest" id="measure7">?</div>
-                            <div class="row frame cDest" id="measure11">?</div>
-                            <div class="row frame cDest" id="measure15">?</div>
-                            <div class="row frame cDest" id="measure19">?</div>
-                            <div class="row frame cDest" id="measure23">?</div>
-                            <div class="row frame cDest" id="measure27">?</div>
-                            <div class="row frame cDest" id="measure31">?</div>
+                            ${cols[2]}
                         </div>
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="chordCol4">
-                            <div class="row frame cDest" id="measure4">?</div>
-                            <div class="row frame cDest" id="measure8">?</div>
-                            <div class="row frame cDest" id="measure12">?</div>
-                            <div class="row frame cDest" id="measure16">?</div>
-                            <div class="row frame cDest" id="measure20">?</div>
-                            <div class="row frame cDest" id="measure24">?</div>
-                            <div class="row frame cDest" id="measure28">?</div>
-                            <div class="row frame cDest" id="measure32">?</div>
+                            ${cols[3]}
                         </div>
                     </div>
                 </div>
