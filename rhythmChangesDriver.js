@@ -17,7 +17,7 @@ function setupHover(){
        $( this ).attr("class","row frame navBlock sectionSelect darken")
     },
     function(){
-       $( this ).attr("class","row frame navBlock sectionSelect")
+       $( this ).attr("class","row frame lightBlue navBlock sectionSelect")
     });   
 }
 function selectSection(sectionId){
@@ -30,7 +30,7 @@ function generateNav(navSegments, currentSection){
     navSection=""
     for(let section in navSegments){
         navSection+=`
-            <div class="row frame navBlock">
+            <div class="row frame navBlock lightBlue">
              <h3>${section}</h3>
             </div>
         `
@@ -42,7 +42,7 @@ function generateNav(navSegments, currentSection){
             }
             navSection+=
             `
-            <div class="row frame navBlock ${sectionClass}" id="${sectionId}" onclick="selectSection(&quot;${sectionId}&quot;)">
+            <div class="row frame lightBlue navBlock ${sectionClass}" id="${sectionId}" onclick="selectSection(&quot;${sectionId}&quot;)">
                 <p>${subsection}</p>
             </div>
             `
