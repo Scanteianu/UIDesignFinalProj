@@ -30,6 +30,8 @@ function generateQuizContent(currentContent,currentState){
     return questionSection
     
 }
+//given the current fraught political climate, it must be pointed out that "Q" is short for "question" and is not to be associated with baseless conspiracies.
+//I was just lazy on the day I originally wrote it and can't be bothered to refactor.
 function handleQAnswer(id){
     let quizProgress=currentState["quizProgress"][currentState["currentSection"]]
     if(quizProgress["state"]!=="question"){

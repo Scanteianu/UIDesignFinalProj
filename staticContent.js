@@ -24,7 +24,7 @@ var contentLibrary=
         "type": "media",
         "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oQdeTbUDCiw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
         "title": "Welcome to the Rhythm Changes Tutorial!",
-        "description": "<br>Hello! We're here to teach you Rhythm Changes in 10 minutes or less! <br><br><b>What are Rhythm Changes?</b><br>Rhythm changes are a common 32-bar chord progression in jazz, originating as the chord progression for George Gershwin's I Got Rhythm. The progression is in AABA form, with each A section based on repetitions of the ubiquitous I–vi–ii–V sequence (or variants such as iii–vi–ii–V), and the B section using a circle of fifths sequence based on III7–VI7–II7–V7, a progression which is sometimes given passing chords. -- Wikipedia<br><br><b>How to use this site</b><br>This site is meant to give you the resources to learn Rhythm Changes in 10 minutes. However, if you've got more than 10 minutes, you'll find resources here to really solidify your knowledge and understanding. If you don't have much time, we recommend just reading about the history and the theory, and only listening to the head of the original \"I Got Rhythm\".You can use the navbar on the right to go through the sections in whatever order you prefer. Feel free to print the sheet music so that you can refer to it throughout the lesson and also later!",    
+        "description": "<br>Hello! We're here to teach you Rhythm Changes in 10 minutes or less! <br><br><b>What are Rhythm Changes?</b><br>Rhythm changes are a common 32-bar chord progression in jazz, originating as the chord progression for George Gershwin's I Got Rhythm. The progression is in AABA form, with each A section based on repetitions of the ubiquitous I–vi–ii–V sequence (or variants such as iii–vi–ii–V), and the B section using a circle of fifths sequence based on III7–VI7–II7–V7, a progression which is sometimes given passing chords. -- <a href=\"https://en.wikipedia.org/wiki/Rhythm_changes\"/>Wikipedia</a><br><br><b>How to use this site</b><br>This site is meant to give you the resources to learn Rhythm Changes in 10 minutes. However, if you've got more than 10 minutes, you'll find resources here to really solidify your knowledge and understanding. If you don't have much time, we recommend just reading about the history and the theory, and only listening to the head of the original \"I Got Rhythm\".You can use the navbar on the right to go through the sections in whatever order you prefer. Feel free to print the sheet music so that you can refer to it throughout the lesson and also later!",    
     },
     "learnHistory": {
         "type": "media",
@@ -34,7 +34,7 @@ var contentLibrary=
         "title": "Rhythm Changes History",
         "description": `<br>This progression's endurance in popularity is largely due to its extensive use by early bebop musicians. The chord changes began to be used in the 1930s, became common in the '40s and '50s, and are now ubiquitous.[7] First, "I Got Rhythm" was by then already a popular jazz standard. Second, by listening to the song and writing a new melody over its chord changes, thereby creating a composition of a type known as a contrafact, a jazz musician could claim copyright to the new melody rather than acknowledge Gershwin's inspiration and pay royalties to Gershwin's estate. Third, using a stock, well-known progression for new melodies made it easier to perform a song at jam sessions, shows, and recordings because the bandleader could tell new musicians that the song uses rhythm changes and note any modifications and chord substitutions.<br><br>
 
-        In the 2010s, mastery of the 12-bar blues and rhythm changes chord progressions are "critical elements for building a jazz repertoire". -- Wikipedia`,    
+        In the 2010s, mastery of the 12-bar blues and rhythm changes chord progressions are "critical elements for building a jazz repertoire". -- <a href="https://en.wikipedia.org/wiki/Rhythm_changes#History"/>Wikipedia</a>`,    
     },
     "learnTheory": {
         "type": "media",
@@ -43,7 +43,7 @@ var contentLibrary=
         `,
         "title": "Rhythm Changes Theory",
         "description": `<br>This video will teach you a little about the theory of Rhythm Changes.<br>
-        It is a 32 Bar form, of AABA structure, with each A being 8 bars, and the B (bridge being 8 bars). It's usually played in B flat major, and utilizes ii V7s extensively.
+        It is a 32 Bar form, of AABA structure, with each A being 8 bars, and the B (bridge being 8 bars). It's usually played in B flat major, and utilizes ii-V7s extensively.
         `,
     },
     "learnMusic": {
