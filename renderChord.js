@@ -18,7 +18,7 @@ function keyDown(keyName){
         `
     }
     else{
-        document.getElementById("chordStatus").innerHTML=notesLeft+"/"+currentChord.length+" notes left in chord."
+        document.getElementById("chordStatus").innerHTML="<b>"+notesLeft+"/"+currentChord.length+"</b> notes left in chord."
     }
     
 }
@@ -80,6 +80,6 @@ function setUpChordOnScreen(chordName, currentChord){
                 </div>
             </div>
             <div id="description">Click the notes that make up the chord displayed above on the piano! <br>This section is random, so you might get the current chord multiple times. When you are comfortable with your knowledge of the chord notes, you can move on!</div>
-            <div id="chordStatus">${notesLeft}/${notesLeft} notes left in chord.</div>
+            <div id="chordStatus"><b>${notesLeft}/${notesLeft}</b> notes left in chord.</div>
     `
 }

@@ -24,7 +24,7 @@ var contentLibrary=
         "type": "media",
         "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oQdeTbUDCiw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
         "title": "Welcome to the Rhythm Changes Tutorial!",
-        "description": "<br>Hello! We're here to teach you Rhythm Changes in 10 minutes or less! <br><br><b>What are Rhythm Changes?</b><br>Rhythm changes are a common 32-bar chord progression in jazz, originating as the chord progression for George Gershwin's I Got Rhythm. The progression is in AABA form, with each A section based on repetitions of the ubiquitous I–vi–ii–V sequence (or variants such as iii–vi–ii–V), and the B section using a circle of fifths sequence based on III7–VI7–II7–V7, a progression which is sometimes given passing chords. -- <a href=\"https://en.wikipedia.org/wiki/Rhythm_changes\"/>Wikipedia</a><br><br><b>How to use this site</b><br>This site is meant to give you the resources to learn Rhythm Changes in 10 minutes. However, if you've got more than 10 minutes, you'll find resources here to really solidify your knowledge and understanding. If you don't have much time, we recommend just reading about the history and the theory, and only listening to the head of the original \"I Got Rhythm\".You can use the navbar on the right to go through the sections in whatever order you prefer. Feel free to print the sheet music so that you can refer to it throughout the lesson and also later!",    
+        "description": "<br>Hello! We're here to teach you Rhythm Changes in 10 minutes or less! <br><br><b>What are Rhythm Changes?</b><br>Rhythm changes are a common 32-bar chord progression in jazz, originating as the chord progression for George Gershwin's I Got Rhythm. The progression is in AABA form, with each A section based on repetitions of the ubiquitous I–vi–ii–V sequence (or variants such as iii–vi–ii–V), and the B section using a circle of fifths sequence based on III7–VI7–II7–V7, a progression which is sometimes given passing chords. -- <a href=\"https://en.wikipedia.org/wiki/Rhythm_changes\"/>Wikipedia</a><br><br><b>How to use this site</b><br>This site is meant to give you the resources to learn Rhythm Changes in 10 minutes. However, if you've got more than 10 minutes, you'll find resources here to really solidify your knowledge and understanding. If you don't have much time, we recommend just reading about the history and the theory, and only listening to the head of the original \"I Got Rhythm\".You can use the menu on the left to go through the sections in whatever order you prefer. Feel free to print the sheet music so that you can refer to it throughout the lesson and also later!",    
     },
     "learnHistory": {
         "type": "media",
@@ -116,6 +116,16 @@ var contentLibrary=
                 "text": "What is the form of Rhythm Changes?",
                 "choices": ["AAB", "Blues", "Through Composed", "AABA"],
                 "correct": 3,
+            },
+            {
+                "text": "What is the first chord of the bridge?",
+                "choices": ["G-7", "C-7", "F7", "D-7"],
+                "correct": 3,
+            },
+            {
+                "text": "What is the most common progression in the bridge?",
+                "choices": ["ii-V", "I-IV", "I-iii", "V7-vi"],
+                "correct": 0,
             },
         ]
     }, 
